@@ -1,7 +1,15 @@
 {
   "folders": [
     {
-      "name": "Micro Frontends Monolith",
+      "name": "UI Library",
+      "path": "./ui-library"
+    },
+    {
+      "name": "Home App",
+      "path": "./home"
+    },
+    {
+      "name": "Root Folder",
       "path": "."
     }
   ],
@@ -44,7 +52,7 @@
       "**/CVS": true,
       "**/.DS_Store": true,
       "**/Thumbs.db": true,
-      "**/node_modules": true
+      "**/node_modules": false
     }
   }
 }

@@ -1,0 +1,21 @@
+{
+  "name": "mf-poc-monolith",
+  "version": "1.0.0",
+  "description": "MicroFrontends Proof-of-concept Monolith Repository",
+  "main": "index.js",
+  "repository": "git@github.com:steviss/mf-poc-monolith.git",
+  "author": "Stefan Stevic <steviss@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "engines": {
+    "node": ">=18.12.0 <19",
+    "yarn": ">=1.22.5"
+  },
+  "workspaces": [
+    "ui-library",
+    "home"
+  ],
+  "resolutions": {
+    "styled-components": "^5"
+  }
+}
