@@ -1,4 +1,17 @@
 {
   "presets": ["@babel/preset-typescript", "@babel/preset-react", "@babel/preset-env"],
-  "plugins": ["babel-plugin-styled-components", ["@babel/transform-runtime"]]
+  "plugins": [
+    "babel-plugin-styled-components",
+    ["@babel/transform-runtime"],
+    [
+      "module-resolver",
+      {
+        "root": ["./src"],
+        "alias": {
+          "src/components": "./src/components",
+          "src/pages": "./src/pages"
+        }
+      }
+    ]
+  ]
 }

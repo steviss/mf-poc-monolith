@@ -1,10 +1,11 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import { Header } from 'src/components'
 
-import { Header } from './components'
+import { ContactUsPage, HomePage } from 'src/pages'
+
 import './index.css'
-import { ContactUsPage, HomePage } from './pages'
 
 const App = () => {
   return (
