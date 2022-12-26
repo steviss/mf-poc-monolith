@@ -34,6 +34,9 @@ module.exports = {
         exclude: /node_modules/,
         use: {
           loader: 'babel-loader',
+          options: {
+            presets: ['@babel/preset-env', '@babel/preset-react', '@babel/preset-typescript'],
+          },
         },
       },
     ],
@@ -44,7 +47,10 @@ module.exports = {
       name: 'ui_library',
       filename: 'remoteEntry.js',
       remotes: {},
-      exposes: {},
+      exposes: {
+        './atoms': './src/components/atoms/index.tsx',
+        './molecules': './src/components/molecules/index.tsx',
+      },
       shared: {
         ...deps,
         react: {
